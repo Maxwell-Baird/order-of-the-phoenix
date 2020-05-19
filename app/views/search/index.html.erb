@@ -5,7 +5,11 @@
 <% @characters.each do |character| %>
   <h4><%=character[:name]%></h4>
   <p>House: <%=character[:house]%> </p>
+  <% if character[:role] != nil %>
   <p>Role: <%=character[:role]%> </p>
+  <% end %>
+  <% if character[:patronus] != nil %>
   <p>Patronus: <%=character[:patronus]%> </p>
+  <% end %>
   <p>-----------------------------------</p>
 <% end %>
