@@ -1,0 +1,11 @@
+<h1> Order of the Phonix </h1>
+<p><%= @characters.length %> members from <%=@house%>
+<p>-----------------------------------</p>
+<p></p>
+<% @characters.each do |character| %>
+  <h4><%=character[:name]%></h4>
+  <p>House: <%=character[:house]%> </p>
+  <p>role: <%=character[:role]%> </p>
+  <p>patronus: <%=character[:patronus]%> </p>
+  <p>-----------------------------------</p>
+<% end %>
